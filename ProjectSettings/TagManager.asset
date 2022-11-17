@@ -9,6 +9,7 @@ TagManager:
   - RespawnManager
   - Undefined
   - Vines
+  - Water
   layers:
   - Default
   - TransparentFX
