@@ -10,6 +10,7 @@ TagManager:
   - Undefined
   - Vines
   - Water
+  - Paintball
   layers:
   - Default
   - TransparentFX
