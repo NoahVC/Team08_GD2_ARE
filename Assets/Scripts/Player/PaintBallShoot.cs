@@ -29,7 +29,7 @@ public class PaintBallShoot : MonoBehaviour
 
     private void ShootPaint()
     {
-        Ray ray = _cam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
+        Ray ray = _cam.ViewportPointToRay(new Vector3(0.5f, 1f, 0f));
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit)) //IF hit collider, set destination for paint ball to that point
