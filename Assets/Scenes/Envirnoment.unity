@@ -991,6 +991,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 623286526638822787, guid: 21491eef2f21907488ad08653c5ac0ae, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1867832551625105646, guid: 21491eef2f21907488ad08653c5ac0ae, type: 3}
       propertyPath: m_Name
       value: Vine (10)
