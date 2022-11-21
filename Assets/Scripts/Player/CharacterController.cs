@@ -117,7 +117,7 @@ public class CharacterController : MonoBehaviour
     {
         if (other.CompareTag("Ladder"))
         {
-            rb.velocity = (Vector2.up * verticalMovement * climbSpeed) + (Vector2.right * horizontalMovement * climbSpeed);
+            rb.velocity = (orientation.up * verticalMovement * climbSpeed) + (orientation.right * horizontalMovement * climbSpeed);
         }
         if (other.CompareTag("Ladder") && isGrounded)
         {
