@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5085910802538013205}
   - component: {fileID: 4928541831314782097}
   - component: {fileID: 2377162371956988964}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ladder
   m_TagString: Ladder
   m_Icon: {fileID: 0}
@@ -69,6 +69,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: VineClimbable
       objectReference: {fileID: 0}
+    - target: {fileID: 1867832551625105646, guid: 21491eef2f21907488ad08653c5ac0ae, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3165709828069906748, guid: 21491eef2f21907488ad08653c5ac0ae, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5536599131473050426, guid: 21491eef2f21907488ad08653c5ac0ae, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6359069802717704100, guid: 21491eef2f21907488ad08653c5ac0ae, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -112,6 +124,14 @@ PrefabInstance:
     - target: {fileID: 6359069802717704100, guid: 21491eef2f21907488ad08653c5ac0ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7884121953414126739, guid: 21491eef2f21907488ad08653c5ac0ae, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9181857102817791277, guid: 21491eef2f21907488ad08653c5ac0ae, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21491eef2f21907488ad08653c5ac0ae, type: 3}

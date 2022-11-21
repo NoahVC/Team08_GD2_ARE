@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4781051815768040816}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Orientation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5950931702246530003}
-  m_Layer: 3
+  m_Layer: 9
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7768582008034404730}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PaintBall Start location
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 5636195694014703278}
   - component: {fileID: 4905451970565314615}
   - component: {fileID: 5250733256753898992}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Body
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ GameObject:
   - component: {fileID: 3597173412111645146}
   - component: {fileID: 7539906706614206028}
   - component: {fileID: 1170916571746994108}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -317,7 +317,7 @@ GameObject:
   - component: {fileID: 8541471441179633692}
   - component: {fileID: 7086791012941566008}
   - component: {fileID: 5070192299856758487}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Camera
   m_TagString: Player
   m_Icon: {fileID: 0}

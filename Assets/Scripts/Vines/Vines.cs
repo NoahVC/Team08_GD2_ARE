@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Vines : MonoBehaviour
+public class Vines : MonoBehaviour, IActivatable
 {
     [SerializeField]
     private List<GameObject> _vineList;
@@ -25,9 +25,6 @@ public class Vines : MonoBehaviour
     private Vector3 _fullExtendPosition;
     private Vector3 _fullExtendScale;
 
-
-
-
     private void Awake()
     {
         _growthTimer = _initialTimer;
@@ -45,8 +42,6 @@ public class Vines : MonoBehaviour
 
     }
 
-    
-
     void Update()
     {
         if (_growthTimer > 0 && _isActivated && transform.localScale.z <= _fullExtendScale.z) 
@@ -63,7 +58,7 @@ public class Vines : MonoBehaviour
 
 
         }
-    }
+    } 
 
     //private void ResetTriggerScale()
     //{
@@ -88,12 +83,16 @@ public class Vines : MonoBehaviour
 
     }
 
-    //called by the water ballon when splashing
-    public void ApplyWater()
-    {
-        if (_isActivated)
-            _growthTimer += _timeAdded;
+    //public void ApplyWater()
+    //{
+    //    if (_isActivated)
+    //        _growthTimer += _timeAdded;
             
+    //}
+
+    public void Activate()//called by the water ballon when splashing
+    {
+        _growthTimer += _timeAdded;
     }
 
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 623286526638822787}
   - component: {fileID: 7941717761535984436}
   - component: {fileID: 8262048800142704059}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Vine
   m_TagString: Vines
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 5239330205802121512}
   - component: {fileID: 8979646717786649483}
   - component: {fileID: 8126652110627027504}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Vine (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 1987608304432960608}
   - component: {fileID: 4178757516158253052}
   - component: {fileID: 1803473127080397524}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Vine (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 2083710722944412630}
   - component: {fileID: 778029123289468153}
   - component: {fileID: 4948781733140726044}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trigger area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 8357031899658457963}
   - component: {fileID: 2352270896475415478}
   - component: {fileID: 9048056777306880033}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Vine (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
