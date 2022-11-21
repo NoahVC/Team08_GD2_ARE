@@ -8,7 +8,7 @@ public class DropSecondaryLadder : MonoBehaviour
     public Transform ladderToDrop = null;
 
     private Vector3 ladderToDropPosition;
-    private float maxYDrop = 9f;
+    private float maxYDrop = 8f;
     public void Start()
     {
         ladderToDropPosition = ladderToDrop.transform.position;
@@ -24,7 +24,7 @@ public class DropSecondaryLadder : MonoBehaviour
     }
     public void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Bullet")
+        if (other.tag == "Paintball")
         {
             isPushed = true;
         }
