@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class CharacterController : MonoBehaviour
 {
 
     [Header("Walking")]
@@ -21,6 +21,9 @@ public class Movement : MonoBehaviour
     [SerializeField] float movementMultiplier = 6f;
     [SerializeField] float airMultiplier = 2f;
 
+    [Header("Drag")]
+    [SerializeField] float groundDrag = 6f;
+    [SerializeField] float airDrag = 2f;
 
     [Header("Ground Detection")]
     [SerializeField] Transform groundCheck = null;
@@ -28,6 +31,7 @@ public class Movement : MonoBehaviour
     [SerializeField] float groundDistance = 0.4f;
     [SerializeField] bool isGrounded = false;
 
+    float playerHeight = 2f;
 
     private Rigidbody rb;
     [SerializeField] float verticalMovement;
@@ -35,8 +39,24 @@ public class Movement : MonoBehaviour
     private Vector3 moveDirection;
     [SerializeField] float moveSpeed;
     private KeyCode jumpKey = KeyCode.Space;
-
+    RaycastHit slopeHit;
+    Vector3 slopeMoveDirection;
     // Start is called before the first frame update
+    private bool OnSlope()
+    {
+        if (Physics.Raycast(transform.position, Vector3.down, out slopeHit, playerHeight))
+        {
+            if (slopeHit.normal != Vector3.up)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        return false;
+    }
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -45,7 +65,7 @@ public class Movement : MonoBehaviour
     private void FixedUpdate()
     {
         MovePlayer();
-
+        ControlDrag();
     }
     // Update is called once per frame
     void Update()
@@ -65,12 +85,23 @@ public class Movement : MonoBehaviour
                 Jump();
             }
         }
+        slopeMoveDirection = Vector3.ProjectOnPlane(moveDirection, slopeHit.normal);
     }
     void Jump()
     {
         rb.velocity = Vector3.up * jumpForce;
     }
-
+    void ControlDrag()
+    {
+        if (isGrounded)
+        {
+            rb.drag = groundDrag;
+        }
+        else
+        {
+            rb.drag = airDrag;
+        }
+    }
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Ladder"))
@@ -86,12 +117,12 @@ public class Movement : MonoBehaviour
     {
         if (other.CompareTag("Ladder"))
         {
-            rb.velocity = Vector2.up * verticalMovement * climbSpeed;
+            rb.velocity = (Vector2.up * verticalMovement * climbSpeed) + (Vector2.right * horizontalMovement * climbSpeed);
         }
         if (other.CompareTag("Ladder") && isGrounded)
         {
 
-           // moveDirection = orientation.forward * verticalMovement + orientation.right * horizontalMovement;
+            // moveDirection = orientation.forward * verticalMovement + orientation.right * horizontalMovement;
 
             Debug.LogFormat("Grounded");
         }
@@ -117,11 +148,15 @@ public class Movement : MonoBehaviour
 
         moveDirection = orientation.forward * verticalMovement + orientation.right * horizontalMovement;
 
-        if (isGrounded)
+        if (isGrounded && !OnSlope())
         {
             rb.AddForce(moveDirection.normalized * moveSpeed * movementMultiplier, ForceMode.Acceleration);
         }
-        else
+        else if (isGrounded && OnSlope())
+        {
+            rb.AddForce(slopeMoveDirection.normalized * moveSpeed * movementMultiplier, ForceMode.Acceleration);
+        }
+        else if (!isGrounded)
         {
             rb.AddForce(moveDirection.normalized * moveSpeed * airMultiplier, ForceMode.Acceleration);
         }
@@ -133,3 +168,5 @@ public class Movement : MonoBehaviour
 
     }
 }
+
+
