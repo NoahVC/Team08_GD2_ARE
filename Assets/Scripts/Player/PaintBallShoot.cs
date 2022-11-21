@@ -14,22 +14,19 @@ public class PaintBallShoot : MonoBehaviour
     
     private Vector3 _destination;
     private float _projectileSpeed = 10f;
-    private float _timeToFire;
-    private float _fireRate = 1f;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Mouse0) && Time.time >= _timeToFire) //Paint ball on customizable timer for feel/gamesense
+        if (Input.GetKeyDown(KeyCode.Mouse0)) //Shoots on press, not hold
         {
-            _timeToFire = Time.time + 1 / _fireRate;
             ShootPaint();
         }
     }
 
     private void ShootPaint()
     {
-        Ray ray = _cam.ViewportPointToRay(new Vector3(0.5f, 1f, 0f));
+        Ray ray = _cam.ViewportPointToRay(new Vector3(0.5f, 0.7f, 0f));
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit)) //IF hit collider, set destination for paint ball to that point
