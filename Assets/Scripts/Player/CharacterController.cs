@@ -14,7 +14,8 @@ public class CharacterController : MonoBehaviour
 
     [Header("Climbing")]
 
-    public bool CanClimb = false;
+    public bool canClimb = false;
+    public bool isClimbing = false;
     public float climbSpeed = 2f;
 
     [Header("Multiplier")]
@@ -110,20 +111,24 @@ public class CharacterController : MonoBehaviour
             Debug.Log("on trigger");
             rb.constraints = RigidbodyConstraints.FreezePositionZ;
             rb.constraints = RigidbodyConstraints.FreezeRotation;
-            CanClimb = true;
+            canClimb = true;
         }
     }
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Ladder"))
+       
+        if (other.CompareTag("Ladder") && canClimb)
         {
+            isClimbing = true;
             rb.velocity = (orientation.up * verticalMovement * climbSpeed) + (orientation.right * horizontalMovement * climbSpeed);
         }
-        if (other.CompareTag("Ladder") && isGrounded)
+        if (other.CompareTag("Ladder") && verticalMovement < 0 && isGrounded)
         {
-
-            // moveDirection = orientation.forward * verticalMovement + orientation.right * horizontalMovement;
-
+           
+            rb.useGravity = true;
+            canClimb = false;
+            rb.constraints = RigidbodyConstraints.None;
+            rb.constraints = RigidbodyConstraints.FreezeRotation;
             Debug.LogFormat("Grounded");
         }
     }
@@ -135,7 +140,7 @@ public class CharacterController : MonoBehaviour
             Debug.Log("out trigger");
             rb.constraints = RigidbodyConstraints.None;
             rb.constraints = RigidbodyConstraints.FreezeRotation;
-            CanClimb = false;
+            canClimb = false;
         }
     }
     void MyInput()
