@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DropSecondaryLadder : MonoBehaviour
 {
-    public bool isPushed = false;
+    private bool isPushed = false;
     public Transform ladderToDrop = null;
 
     private Vector3 ladderToDropPosition;

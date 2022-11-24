@@ -59,7 +59,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61be6a1ef8d355144b9aa9aaa165f43f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPushed: 0
   ladderToDrop: {fileID: 2486346719567838918}
 --- !u!1 &8559914525880581118
 GameObject:
@@ -324,6 +323,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8150524616573809579, guid: 14e3e37d176574147a6081198017f92d, type: 3}
+      propertyPath: m_TagString
+      value: Ladder
+      objectReference: {fileID: 0}
     - target: {fileID: 8183747649927009697, guid: 14e3e37d176574147a6081198017f92d, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.9199996
@@ -362,7 +365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8225078219474100100, guid: 14e3e37d176574147a6081198017f92d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8225078219474100100, guid: 14e3e37d176574147a6081198017f92d, type: 3}
       propertyPath: m_LocalRotation.x
@@ -370,7 +373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8225078219474100100, guid: 14e3e37d176574147a6081198017f92d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8225078219474100100, guid: 14e3e37d176574147a6081198017f92d, type: 3}
       propertyPath: m_LocalRotation.z
@@ -382,7 +385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8225078219474100100, guid: 14e3e37d176574147a6081198017f92d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 8225078219474100100, guid: 14e3e37d176574147a6081198017f92d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -399,6 +402,10 @@ PrefabInstance:
     - target: {fileID: 8225078219474100103, guid: 14e3e37d176574147a6081198017f92d, type: 3}
       propertyPath: m_Size.y
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8225078219474100103, guid: 14e3e37d176574147a6081198017f92d, type: 3}
+      propertyPath: m_Center.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14e3e37d176574147a6081198017f92d, type: 3}
