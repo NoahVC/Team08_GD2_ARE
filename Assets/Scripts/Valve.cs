@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class Valve : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private HingeJoint _joint;
+    [SerializeField]
+    private GameObject[] _activatableObjects;
 
-    // Update is called once per frame
+    private float _precedentRotation = 0;
+    private float _totalRotation=0;
+    
     void Update()
     {
-        
+        _totalRotation += _joint.velocity * Time.deltaTime;
+        if(!(_precedentRotation==_totalRotation))
+        {
+            _precedentRotation = _totalRotation;
+            foreach (var item in _activatableObjects)
+            {
+                item.GetComponent<ValveActivatable>().Activate(_totalRotation);
+            }
+        }
     }
 }
+
+public interface IValveActivate
+{
+    public abstract void Activate(float rotation);
+}
+

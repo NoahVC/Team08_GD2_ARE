@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8225078219474100100}
   - component: {fileID: 8225078219474100103}
+  - component: {fileID: 1338362580606982812}
   m_Layer: 6
   m_Name: Ladder
   m_TagString: Ladder
@@ -26,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 8225078219474100101}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 4.76, z: 13.33}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5252025, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8815702090757515537}
@@ -44,8 +45,21 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.92, y: 11.16, z: 1.21}
-  m_Center: {x: 0, y: 0, z: 0.06}
+  m_Size: {x: 3.01, y: 11.64, z: 1.01}
+  m_Center: {x: 0, y: 0, z: 0.03}
+--- !u!65 &1338362580606982812
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8225078219474100101}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.38, y: 10.75, z: 0.67}
+  m_Center: {x: 0, y: 0, z: -0.34}
 --- !u!1001 &9069426276174417658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -112,7 +126,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: cbe59939b723b5349bfb5b07334a688b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 431fea0237c21e54cabe7d9593fe5946, type: 2}
+      objectReference: {fileID: 2100000, guid: 677af76d5702f0148b2152ecae4c2cf0, type: 2}
     - target: {fileID: 919132149155446097, guid: cbe59939b723b5349bfb5b07334a688b, type: 3}
       propertyPath: m_Name
       value: LadderFBX

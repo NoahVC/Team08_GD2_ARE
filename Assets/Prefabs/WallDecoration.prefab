@@ -105,6 +105,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fb87c1fc460f1434ba8209c804a03bcd, type: 2}
+    - target: {fileID: 3147646100499234517, guid: 9e829199df5e8dd4a812758f5b6f2674, type: 3}
+      propertyPath: m_Size.y
+      value: 2.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 3147646100499234517, guid: 9e829199df5e8dd4a812758f5b6f2674, type: 3}
+      propertyPath: m_Center.y
+      value: 1.02
+      objectReference: {fileID: 0}
     - target: {fileID: 8591083265171141044, guid: 9e829199df5e8dd4a812758f5b6f2674, type: 3}
       propertyPath: m_Name
       value: Floor (1)

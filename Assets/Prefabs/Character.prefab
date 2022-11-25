@@ -262,8 +262,9 @@ MonoBehaviour:
   walkSpeed: 4
   acceleration: 10
   jumpForce: 6
-  CanClimb: 0
-  climbSpeed: 2
+  canClimb: 0
+  isClimbing: 0
+  climbSpeed: 4
   movementMultiplier: 6
   airMultiplier: 2
   groundDrag: 6

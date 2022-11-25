@@ -60,12 +60,6 @@ public class Vines : MonoBehaviour, IActivatable
         }
     } 
 
-    //private void ResetTriggerScale()
-    //{
-    //    _triggerArea.transform.localScale = new Vector3(_triggerArea.transform.localScale.x, _triggerArea.transform.localScale.y, _triggerSize);
-    //}
-
-    //when the base is reached by something, if that thing is an activated vine --> activate this object
 
     private void OnTriggerEnter(Collider other)
     {

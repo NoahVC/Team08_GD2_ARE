@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5232904254348811340}
   - component: {fileID: 7486684603274103907}
   - component: {fileID: 8896559773696990110}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PaintBall
   m_TagString: Paintball
   m_Icon: {fileID: 0}
@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7ada797f6575d5f45baa8806ebf4c9b5, type: 2}
+  - {fileID: 2100000, guid: ff61ca4725ec84342bcc9522b8e8f0d6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 1443167966459336916}
   - component: {fileID: 5215287746025855577}
   - component: {fileID: 1296624335595654082}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
