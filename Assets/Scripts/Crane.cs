@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class Crane : ValveActivatable
 {
-    private Transform _joint;
+    private Rigidbody _joint;
     private float _rotation;
     private float _initialRotation;
 
     private void Start()
     {
         _initialRotation = transform.rotation.eulerAngles.z;
-        _joint = transform.GetChild(0);
+        _joint = transform.GetChild(0).GetChild(0).GetComponent<Rigidbody>();
     }
 
     void Update()
     {
         Vector3 temp = transform.rotation.eulerAngles;
         float change =Mathf.Clamp((_initialRotation + _rotation), -180, 90);
-        _joint.rotation = Quaternion.Euler(temp.x, change, temp.z);
+        _joint.MoveRotation(Quaternion.Euler(temp.x, change, temp.z));
 
     }
 
