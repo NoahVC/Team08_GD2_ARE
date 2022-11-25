@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bridge : MonoBehaviour 
+public class Bridge : ValveActivatable
 {
-    [SerializeField]
-    private float _resistance= 0.1f;
     private float _rotation;
     private float _initialRotation;
 
-    public void Activate(float rotation)
+
+    public override void Activate(float rotation)
     {
         _rotation = rotation;
     }
+
+    
 
     private void Start()
     {

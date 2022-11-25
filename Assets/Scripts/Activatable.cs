@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 
-abstract class Activatable
+public abstract class Activatable : MonoBehaviour
 {
     public abstract void Activate();
 }

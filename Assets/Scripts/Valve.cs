@@ -8,6 +8,8 @@ public class Valve : MonoBehaviour
     private HingeJoint _joint;
     [SerializeField]
     private GameObject[] _activatableObjects;
+    [SerializeField]
+    private float _resistance= 0.9f;
 
     private float _precedentRotation = 0;
     private float _totalRotation=0;
@@ -20,7 +22,7 @@ public class Valve : MonoBehaviour
             _precedentRotation = _totalRotation;
             foreach (var item in _activatableObjects)
             {
-                item.GetComponent<ValveActivatable>().Activate(_totalRotation);
+                item.GetComponent<ValveActivatable>().Activate(_totalRotation * _resistance);
             }
         }
     }
