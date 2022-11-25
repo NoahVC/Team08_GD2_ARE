@@ -114,7 +114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _joint: {fileID: 7191691516150402642}
   _activatableObjects: []
-  _resistance: 1
+  _resistance: 0.03
 --- !u!1 &294883773775880876
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,7 +647,7 @@ HingeJoint:
   m_UseMotor: 1
   m_Motor:
     targetVelocity: 0
-    force: 0
+    force: 3
     freeSpin: 0
   m_UseLimits: 0
   m_Limits:

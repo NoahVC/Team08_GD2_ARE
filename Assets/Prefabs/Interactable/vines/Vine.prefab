@@ -93,7 +93,7 @@ MonoBehaviour:
   - {fileID: 9181857102817791277}
   - {fileID: 3165709828069906748}
   _timeAdded: 1
-  _growthSpeed: 1
+  _growthSpeed: 3
   _initialSizeReduction: 0
   _initialTimer: 10000
   _isActivated: 0
