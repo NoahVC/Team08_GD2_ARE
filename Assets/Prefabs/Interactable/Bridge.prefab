@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1531759782763546540}
   - component: {fileID: 1531759782763546542}
   - component: {fileID: 1531759782763546541}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BridgeBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 1531759782816466998}
   - component: {fileID: 1531759782816466992}
   - component: {fileID: 1531759782816466999}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BridgeBar (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 1531759782967683457}
   - component: {fileID: 1531759782967683459}
   - component: {fileID: 1531759782967683458}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BridgeBar (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 1531759783122497947}
   - component: {fileID: 1531759783122497957}
   - component: {fileID: 1531759783122497956}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BridgeBar (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 1531759783404012127}
   - component: {fileID: 1531759783404012121}
   - component: {fileID: 1531759783404012120}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BridgeBar (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 1531759783755377586}
   - component: {fileID: 1531759783755377585}
   - component: {fileID: 1531759783755377584}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BridgeBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -525,9 +525,9 @@ GameObject:
   - component: {fileID: 1531759783941969853}
   - component: {fileID: 1531759783941969852}
   - component: {fileID: 1531759783941969848}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bridge
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -640,7 +640,7 @@ GameObject:
   - component: {fileID: 1531759784180582481}
   - component: {fileID: 1531759784180582483}
   - component: {fileID: 1531759784180582482}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BridgeBar (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
