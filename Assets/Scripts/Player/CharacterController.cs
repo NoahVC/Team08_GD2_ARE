@@ -17,6 +17,7 @@ public class CharacterController : MonoBehaviour
     public bool canClimb = false;
     public bool isClimbing = false;
     public float climbSpeed = 2f;
+    public bool isInsideVine = false;
 
     [Header("Multiplier")]
     [SerializeField] float movementMultiplier = 6f;
@@ -111,12 +112,11 @@ public class CharacterController : MonoBehaviour
             Debug.Log("on trigger");
             rb.constraints = RigidbodyConstraints.FreezePositionZ;
             rb.constraints = RigidbodyConstraints.FreezeRotation;
-            canClimb = true;
         }
     }
     private void OnTriggerStay(Collider other)
     {
-       
+        canClimb = true;
         if (other.CompareTag("Ladder") && canClimb)
         {
             isClimbing = true;
@@ -141,6 +141,7 @@ public class CharacterController : MonoBehaviour
             rb.constraints = RigidbodyConstraints.None;
             rb.constraints = RigidbodyConstraints.FreezeRotation;
             canClimb = false;
+
         }
     }
     void MyInput()

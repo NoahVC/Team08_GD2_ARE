@@ -300,7 +300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6153093030078138798, guid: 3e29d1ceee90b654794a6362ef59a728, type: 3}
       propertyPath: _resistance
-      value: 0.1
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 6153093030078138798, guid: 3e29d1ceee90b654794a6362ef59a728, type: 3}
       propertyPath: _activatableObjects.Array.size
