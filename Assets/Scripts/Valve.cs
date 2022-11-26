@@ -28,8 +28,3 @@ public class Valve : MonoBehaviour
     }
 }
 
-public interface IValveActivate
-{
-    public abstract void Activate(float rotation);
-}
-

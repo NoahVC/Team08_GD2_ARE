@@ -12,6 +12,7 @@ TagManager:
   - Water
   - Paintball
   - test
+  - Valve
   layers:
   - Default
   - TransparentFX
