@@ -36,7 +36,7 @@ public class PaintBallProjectile : MonoBehaviour
 
             Destroy(gameObject);
             RaycastHit hit;
-            if (Physics.Raycast(transform.position, Vector3.down/*GetRandomProjectileSplash()*/, out hit, _paintDiameter))
+            if (Physics.Raycast(collision.transform.position, Vector3.down/*GetRandomProjectileSplash()*/, out hit, _paintDiameter))
             {
                 MyShaderBehavior Script = hit.collider.gameObject.GetComponent<MyShaderBehavior>();
                 if (Script != null)
