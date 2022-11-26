@@ -129,6 +129,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sphere: {fileID: 5232904254348811340}
+  _paintSplash: {fileID: 2800000, guid: fd12dbe3b63ae464f824b4a74c0e1766, type: 3}
+  _paintColor: {r: 0.47138664, g: 0.9339623, b: 0.9076216, a: 0}
 --- !u!1 &4665761143171438958
 GameObject:
   m_ObjectHideFlags: 0
