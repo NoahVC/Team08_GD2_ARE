@@ -261,7 +261,7 @@ MonoBehaviour:
   orientation: {fileID: 4781051815768040816}
   walkSpeed: 6
   acceleration: 10
-  jumpForce: 4
+  jumpForce: 8
   canClimb: 0
   isClimbing: 0
   climbSpeed: 4
