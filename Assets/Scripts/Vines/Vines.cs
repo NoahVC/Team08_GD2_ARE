@@ -6,6 +6,13 @@ public class Vines : MonoBehaviour, IActivatable
 {
     [SerializeField]
     private List<GameObject> _vineList;
+    private bool _isActivated;
+
+    public bool isActivated
+    {
+        get { return _isActivated; }
+        set { _isActivated = value; }
+    }
 
     [SerializeField]
     private float _timeAdded = 1;
@@ -20,11 +27,11 @@ public class Vines : MonoBehaviour, IActivatable
     private float _growthTimer;
 
     //public bool _isFirst = false;
-    public bool _isActivated = false;
+   // public bool _isActivated = false;
 
     private Vector3 _fullExtendPosition;
     private Vector3 _fullExtendScale;
-
+    
     private void Awake()
     {
         _growthTimer = _initialTimer;

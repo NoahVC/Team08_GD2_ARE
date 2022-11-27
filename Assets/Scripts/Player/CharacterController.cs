@@ -124,7 +124,7 @@ public class CharacterController : MonoBehaviour
         }
         if (other.CompareTag("Ladder") && verticalMovement < 0 && isGrounded)
         {
-           
+
             rb.useGravity = true;
             canClimb = false;
             rb.constraints = RigidbodyConstraints.None;
@@ -154,15 +154,17 @@ public class CharacterController : MonoBehaviour
 
         moveDirection = orientation.forward * verticalMovement + orientation.right * horizontalMovement;
 
-        if (isGrounded && !OnSlope())
+        if (isGrounded)
         {
             rb.AddForce(moveDirection.normalized * moveSpeed * movementMultiplier, ForceMode.Acceleration);
+            Debug.Log("Moving");
         }
         else if (isGrounded && OnSlope())
         {
             rb.AddForce(slopeMoveDirection.normalized * moveSpeed * movementMultiplier, ForceMode.Acceleration);
+
         }
-        else if (!isGrounded)
+        if (!isGrounded)
         {
             rb.AddForce(moveDirection.normalized * moveSpeed * airMultiplier, ForceMode.Acceleration);
         }
