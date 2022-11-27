@@ -6627,12 +6627,24 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4253132756250507977, guid: 0f6cc48c44de0d346992718bd7c24016, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6.945881
+      objectReference: {fileID: 0}
+    - target: {fileID: 4253132756250507977, guid: 0f6cc48c44de0d346992718bd7c24016, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.31178606
+      objectReference: {fileID: 0}
+    - target: {fileID: 4253132756250507977, guid: 0f6cc48c44de0d346992718bd7c24016, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 6.945881
+      objectReference: {fileID: 0}
+    - target: {fileID: 4253132756250507977, guid: 0f6cc48c44de0d346992718bd7c24016, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.77
       objectReference: {fileID: 0}
     - target: {fileID: 4253132756250507977, guid: 0f6cc48c44de0d346992718bd7c24016, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.45
+      value: 1.37
       objectReference: {fileID: 0}
     - target: {fileID: 4253132756250507977, guid: 0f6cc48c44de0d346992718bd7c24016, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6669,6 +6681,10 @@ PrefabInstance:
     - target: {fileID: 8820708480732206874, guid: 0f6cc48c44de0d346992718bd7c24016, type: 3}
       propertyPath: m_Name
       value: WaterCilinder
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820708480732206874, guid: 0f6cc48c44de0d346992718bd7c24016, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f6cc48c44de0d346992718bd7c24016, type: 3}
