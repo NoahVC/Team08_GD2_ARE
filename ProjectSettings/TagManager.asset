@@ -13,6 +13,7 @@ TagManager:
   - Paintball
   - test
   - Valve
+  - Collectible
   layers:
   - Default
   - TransparentFX
