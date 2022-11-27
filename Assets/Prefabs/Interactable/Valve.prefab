@@ -114,7 +114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _joint: {fileID: 7191691516150402642}
   _activatableObjects: []
-  _resistance: 0.03
+  _resistance: 0.1
 --- !u!1 &294883773775880876
 GameObject:
   m_ObjectHideFlags: 0
